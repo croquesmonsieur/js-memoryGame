@@ -20,6 +20,10 @@ body{
 
 }
 
+#playField2{
+  visibility: visible;
+}
+
 .parallax{
   background-image: url("../img/dinoland2.jpg");
   background-attachment: fixed;
@@ -61,14 +65,17 @@ body{
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding: 10px;
 }
 
 .grid-item {
-  border: 1px solid darkslategrey;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.play_info{
+  margin-left: 125px;
+  margin-right: 95px;
 }
 
 .howToPlay{
@@ -86,6 +93,8 @@ h1{
 }
 
 .startButton{
+  margin-left: 60px;
+  margin-right: 55px;
   width: 200px;
   height: 100px;
   border: 2px solid gold;
@@ -96,26 +105,55 @@ h1{
   font-family: dinoFont;
   color: gold;
 }
-
+/*
 .jumpy_button:hover{
   transform: scale(1.1);
 }
-/*
-.moveVertical{
+*/
+
+.hide_avatars_left{
+  transition: 3s;
+  transform: translate(-1050px, 0);
+}
+.hide_avatars_right{
+  transition: 3s;
+  transform: translate(900px, 0);
+}
+.hide_text{
+  animation: play 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes play{
+from {opacity: 100}
+  to {opacity: 0}
+}
+
+.moveVerticalPlayfield{
   -webkit-transition: 3s;
   -moz-transition: 3s;
   -o-transition: 3s;
   transition: 3s;
-  margin-bottom: 50%;
+  /*margin-top: 50%;*/
+  transform: translate(0, -38%);
 }
-*/
+
+.restart_playfield{
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  /*margin-top: 50%;*/
+  transform: translate(0, 0.2);
+}
+
 .dino:hover{
   transform: scale(1.1);
 }
 .avatar_container{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 25px;
 }
 .chosen_dino{
@@ -335,7 +373,6 @@ h1{
   height: 210px;
   border: 2px solid darkslategrey;
   margin: 3px;
-  /*background-color: cadetblue;*/
   background: rgba(0, 0, 40, 0.5);
   border-radius: 5%;
 }

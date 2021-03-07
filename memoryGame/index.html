@@ -47,40 +47,37 @@
 <div class="parallax">
   <header id="header"><h1>Dinosaur Memory Game</h1></header>
 
-  <div class="avatar_container">
-  <div class="avatar1 dino"></div>
-  <div class="avatar2 dino"></div>
-  <div class="avatar3 dino"></div>
-  <div class="avatar4 dino"></div>
-  <div class="avatar5 dino"></div>
-  <div class="avatar6 dino"></div>
-  <div class="avatar7 dino"></div>
-  <div class="avatar8 dino"></div>
-  <div class="avatar9 dino"></div>
-  <div class="avatar10 dino"></div>
-  <div class="avatar11 dino"></div>
-  <div class="avatar12 dino"></div>
-  <div class="avatar13 dino"></div>
-  <div class="avatar14 dino"></div>
-  <div class="avatar15 dino"></div>
-  <div class="avatar16 dino"></div>
-  <div class="avatar17 dino"></div>
-  <div class="avatar18 dino"></div>
+  <div class="avatar_container" id="avatar_container">
+  <div class="avatar1 dino" id="dino1"></div>
+  <div class="avatar2 dino" id="dino2"></div>
+  <div class="avatar3 dino" id="dino3"></div>
+  <div class="avatar4 dino" id="dino4"></div>
+  <div class="avatar5 dino" id="dino5"></div>
+  <div class="avatar6 dino" id="dino6"></div>
+  <div class="avatar7 dino" id="dino7"></div>
+  <div class="avatar8 dino" id="dino8"></div>
+  <div class="avatar9 dino"id="dino9"></div>
+  <div class="avatar10 dino"id="dino10"></div>
+  <div class="avatar11 dino"id="dino11"></div>
+  <div class="avatar12 dino"id="dino12"></div>
+  <div class="avatar13 dino"id="dino13"></div>
+  <div class="avatar14 dino"id="dino14"></div>
+  <div class="avatar15 dino"id="dino15"></div>
+  <div class="avatar16 dino"id="dino16"></div>
+  <div class="avatar17 dino"id="dino17"></div>
   </div>
-  <div class="grid-container-fluid">
+  <div class="grid-container-fluid" id="grid-container">
     <div class="grid-item">
-      <button type="submit" class="startButton jumpy_button" id="lets_start">Start</button>
-      <div class="howToPlay"><p>Choose your 8 dinosaurs to play and hit the Start Game button</p></div>
-      <button type="submit" class="startButton jumpy_button" id="restart">Restart</button>
+      <button type="submit" class="startButton" id="lets_start">Start</button>
+      <div class="howToPlay" id="playText"><p>Hit Start to play or choose your own dinosaurs</p></div>
+      <button type="submit" class="startButton" id="restart">Restart</button>
     </div>
-    <div class="grid-item">
+    <div class="grid-item play_info">
       <span class="move-counter" id="moveCounter"></span>
       <span class="timer" id="timer">0 mins 0 secs</span>
     </div>
   </div>
   <!-- The Modal -->
-
-
 
   <div class="container myCon" id="playField">
     <div class="row myRow">
@@ -108,6 +105,45 @@
       <div class="col myCol" id="playCell15" type="play7"></div>
     </div>
   </div>
+  <!--
+  <div class="container myCon" id="playField2">
+    <div class="row myRow">
+      <div class="col myCol" id="playCell20" type="play0"></div>
+      <div class="col myCol" id="playCell21" type="play1"></div>
+      <div class="col myCol" id="playCell22" type="play2"></div>
+      <div class="col myCol" id="playCell23" type="play3"></div>
+      <div class="col myCol" id="playCell24" type="play3"></div>
+    </div>
+    <div class="row myRow">
+      <div class="col myCol" id="playCell25" type="play4"></div>
+      <div class="col myCol" id="playCell26" type="play5"></div>
+      <div class="col myCol" id="playCell27" type="play6"></div>
+      <div class="col myCol" id="playCell28" type="play7"></div>
+      <div class="col myCol" id="playCell29" type="play3"></div>
+    </div>
+    <div class="row myRow">
+      <div class="col myCol" id="playCell30" type="play0"></div>
+      <div class="col myCol" id="playCell31" type="play1"></div>
+      <div class="col myCol" id="playCell32" type="play2"></div>
+      <div class="col myCol" id="playCell33" type="play3"></div>
+      <div class="col myCol" id="playCell34" type="play3"></div>
+    </div>
+    <div class="row myRow">
+      <div class="col myCol" id="playCell35" type="play4"></div>
+      <div class="col myCol" id="playCell36" type="play5"></div>
+      <div class="col myCol" id="playCell37" type="play6"></div>
+      <div class="col myCol" id="playCell38" type="play7"></div>
+      <div class="col myCol" id="playCell39" type="play3"></div>
+    </div>
+    <div class="row myRow">
+      <div class="col myCol" id="playCell40" type="play4"></div>
+      <div class="col myCol" id="playCell41" type="play5"></div>
+      <div class="col myCol" id="playCell42" type="play6"></div>
+      <div class="col myCol" id="playCell43" type="play7"></div>
+      <div class="col myCol" id="playCell44" type="play3"></div>
+    </div>
+  </div>
+  -->
 </div>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
